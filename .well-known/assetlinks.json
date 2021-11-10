@@ -1,0 +1,14 @@
+[
+  {
+	"relation": [
+	  "delegate_permission/common.handle_all_urls"
+	],
+	"target": {
+	  "namespace": "android_app",
+	  "package_name": "br.com.appfactory.movida",
+	  "sha256_cert_fingerprints": [
+		"D7:8E:F4:5D:0C:4D:50:C0:40:E8:51:20:9F:E7:ED:F1:28:F8:EF:0D:57:8B:52:7D:56:84:9D:F3:0C:17:15:BE"
+	  ]
+	}
+  }
+]

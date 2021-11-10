@@ -1,0 +1,17 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:shortcutDisabledMessage="@string/label_magikarp_disabled"
+        android:shortcutId="magikarp"
+        android:shortcutLongLabel="@string/label_magikarp"
+        android:shortcutShortLabel="@string/label_magikarp">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="nofity://pokemon-magikarp"
+            android:targetClass="com.quanticheart.deeplinks.deeplinkDispatcher.extentions.DeeplinkActivity"
+            android:targetPackage="com.quanticheart.deeplinks" />
+        <categories android:name="android.intent.category.DEFAULT" />
+    </shortcut>
+</shortcuts>

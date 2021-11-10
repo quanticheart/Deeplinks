@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Deeplinks</string>
+    <string name="label_magikarp_disabled">Magikarp Is Hide</string>
+    <string name="label_magikarp">Magikarp</string>
+</resources>
