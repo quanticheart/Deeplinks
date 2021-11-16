@@ -8,12 +8,23 @@ import com.quanticheart.deeplinks.AbilityActivity
 import com.quanticheart.deeplinks.PokemonActivity
 import com.quanticheart.deeplinks.deeplinkDispatcher.contants.HOST
 import com.quanticheart.deeplinks.deeplinkDispatcher.contants.HOST2
+import com.quanticheart.deeplinks.deeplinkDispatcher.contants.HOST2_SIMPLE
+import com.quanticheart.deeplinks.deeplinkDispatcher.contants.HOST_SIMPLE
 import com.quanticheart.deeplinks.deeplinkDispatcher.contants.SCHEME
 import com.quanticheart.deeplinks.deeplinkDispatcher.contants.SCHEME_NOTIFY
+import com.quanticheart.deeplinks.deeplinkDispatcher.extentions.browse
 
 object DeepLinkProcessor {
+
     @JvmStatic
-    @DeepLink(value = ["$SCHEME://$HOST", "$SCHEME://$HOST2"])
+    @DeepLink(
+        value = [
+            "$SCHEME://$HOST",
+            "$SCHEME://$HOST_SIMPLE",
+            "$SCHEME://$HOST2",
+            "$SCHEME://$HOST2_SIMPLE"
+        ]
+    )
     fun Context.deeplinkGoToMainActivity(extras: Bundle) = extras.getString(DeepLink.URI)?.let {
         browse(it)
     }

@@ -2,7 +2,7 @@ package com.quanticheart.deeplinks
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.quanticheart.deeplinks.deeplinkDispatcher.verifyDeeplink
+import com.quanticheart.deeplinks.deeplinkDispatcher.extentions.verifyDeeplink
 import kotlinx.android.synthetic.main.deeplink_main.deeplink
 
 class PokemonActivity : AppCompatActivity() {
@@ -13,10 +13,7 @@ class PokemonActivity : AppCompatActivity() {
         deeplink.text = "Not Have a deeplink"
 
         verifyDeeplink { parameters ->
-            deeplink.text = parameters.getString("id")
+            deeplink.text = "Pokemon ${parameters.getString("id")}"
         }
-//        intent.extras?.let { parameters ->
-//            deeplink.text = parameters.getString("id")
-//        }
     }
 }

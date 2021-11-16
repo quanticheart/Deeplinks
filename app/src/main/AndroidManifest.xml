@@ -31,13 +31,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data
-                    android:host="www.poketudo.com.br"
-                    android:scheme="https" />
+                <data android:scheme="https" />
 
-                <data
-                    android:host="www.quanticheart.com"
-                    android:scheme="https" />
+                <data android:host="www.poketudo.com.br" />
+                <data android:host="poketudo.com.br" />
+                <data android:host="www.quanticheart.com" />
+                <data android:host="quanticheart.com" />
 
                 <data android:scheme="notify" />
 
