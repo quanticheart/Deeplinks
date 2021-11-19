@@ -49,6 +49,14 @@ adb shell am start -a android.intent.action.VIEW \
     -c android.intent.category.BROWSABLE \
     -d "http://domain.name:optional_port"
 ```
+
+###
+##### Others:
+
+[App links intent filters in assetlinks.json not working on Android](https://stackoverflow.com/questions/35518429/app-links-intent-filters-in-assetlinks-json-not-working-on-android/60342565#60342565)
+
+[Android Instant App is uploaded but can not be roll out](https://stackoverflow.com/questions/44772959/android-instant-app-is-uploaded-but-can-not-be-roll-out)
+
 ###
 ##### Tip:
 

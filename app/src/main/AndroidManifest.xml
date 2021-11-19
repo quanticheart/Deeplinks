@@ -24,8 +24,14 @@
 
         <activity
             android:name=".deeplinkDispatcher.extentions.DeeplinkActivity"
-            android:exported="true">
-            <intent-filter>
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:noHistory="true">
+
+            <intent-filter
+                android:autoVerify="true"
+                android:label="Poketudo">
+
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
